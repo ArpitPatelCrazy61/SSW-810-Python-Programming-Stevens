@@ -13,7 +13,7 @@ class TestRepository(unittest.TestCase):
         self.test_path: str = "HW10_Test"
         self.repo: Repository = Repository(self.test_path, False)
 
-    def test_majors(self):
+    def test_majors(self) -> None:
         """ Testing majors table"""
         expected = [['SFEN', ['SSW 540', 'SSW 555', 'SSW 564', 'SSW 567'],
                      ['CS 501', 'CS 513', 'CS 545']],
